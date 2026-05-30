@@ -1,12 +1,241 @@
-<!DOCTYPE html>>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>VoyagerPilots Github Page</title>
-    </head>
-    <body>
-        <h1> Welcome to VoyagerPilots</h1>
-        <p> VoyagerPilots is Korean IT company that develops and provides a wide range of digital technology-based services, including Artificial intelligence (AI) and financial technologies.</p>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voyager Pilots</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            line-height:1.6;
+            color:#333;
+        }
+
+        header{
+            background:#111827;
+            color:white;
+            padding:20px 10%;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        .logo{
+            font-size:28px;
+            font-weight:bold;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin-left:20px;
+        }
+
+        .hero{
+            min-height:80vh;
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+            padding:50px 10%;
+            background:#f8fafc;
+        }
+
+        .hero-text{
+            width:50%;
+        }
+
+        .hero-text h1{
+            font-size:48px;
+            margin-bottom:20px;
+        }
+
+        .hero-text p{
+            font-size:18px;
+            margin-bottom:25px;
+        }
+
+        .btn{
+            display:inline-block;
+            background:#2563eb;
+            color:white;
+            padding:12px 24px;
+            text-decoration:none;
+            border-radius:8px;
+        }
+
+        .image-placeholder{
+            width:500px;
+            height:350px;
+            border:3px dashed #999;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            color:#666;
+            font-size:22px;
+            background:white;
+        }
+
+        section{
+            padding:80px 10%;
+        }
+
+        .section-title{
+            text-align:center;
+            margin-bottom:50px;
+            font-size:36px;
+        }
+
+        .cards{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:25px;
+        }
+
+        .card{
+            background:white;
+            padding:30px;
+            border-radius:12px;
+            box-shadow:0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .card h3{
+            margin-bottom:15px;
+        }
+
+        .about{
+            background:#f3f4f6;
+        }
+
+        footer{
+            background:#111827;
+            color:white;
+            text-align:center;
+            padding:25px;
+        }
+
+        @media(max-width:900px){
+            .hero{
+                flex-direction:column;
+                text-align:center;
+            }
+
+            .hero-text{
+                width:100%;
+                margin-bottom:40px;
+            }
+
+            .image-placeholder{
+                width:100%;
+                max-width:500px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Voyager Pilots</div>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+
+    <div class="hero-text">
+        <h1>Innovating the Future with AI</h1>
+
+        <p>
+            Voyager Pilots is a Korean IT company
+            developing digital solutions across
+            AI, fintech, mobile applications,
+            and emerging technologies.
+        </p>
+
+        <a href="#about" class="btn">
+            Learn More
+        </a>
+    </div>
+
+    <!-- IMAGE HERE -->
+    <div class="image-placeholder">
+        MAIN IMAGE
+    </div>
+
+</section>
+
+<section id="about" class="about">
+
+    <h2 class="section-title">About Us</h2>
+
+    <p style="text-align:center; max-width:900px; margin:auto;">
+        Voyager Pilots develops innovative digital services
+        that combine artificial intelligence, financial technology,
+        software engineering, and mobile platforms.
+        Our mission is to create practical solutions that
+        empower businesses and individuals.
+    </p>
+
+</section>
+
+<section id="services">
+
+    <h2 class="section-title">Our Services</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Artificial Intelligence</h3>
+            <p>
+                AI-powered solutions, automation,
+                and intelligent data analysis.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>FinTech</h3>
+            <p>
+                Financial services, analytics,
+                and digital finance technologies.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>App Development</h3>
+            <p>
+                Mobile and web applications
+                tailored to modern businesses.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="contact">
+
+    <h2 class="section-title">Contact</h2>
+
+    <div style="text-align:center;">
+        <p>Email: contact@voyagerpilots.com</p>
+        <p>Website: voyagerpilots.com</p>
+    </div>
+
+</section>
+
+<footer>
+    © 2026 Voyager Pilots. All Rights Reserved.
+</footer>
+
+</body>
 </html>
