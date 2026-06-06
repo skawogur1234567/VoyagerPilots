@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Voyager Pilots</title>
+
+    <style>
+        /* 메인 페이지와 통일된 기본 스타일 */
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            line-height:1.6;
+            color:#333;
+            background:#f8fafc; /* 연한 회색 배경으로 통일 */
+        }
+
+        header{
+            background:#111827;
+            color:white;
+            padding:20px 10%;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        .logo{
+            font-size:28px;
+            font-weight:bold;
+        }
+
+        .logo a{
+            color:white;
+            text-decoration:none;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin-left:20px;
+        }
+
+        /* 서브페이지 전용 타이틀 섹션 */
+        .page-header {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 60px 10%;
+            border-top: 1px solid #1f2937;
+        }
+
+        .page-header h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        section{
+            padding:80px 10%;
+        }
+
+        /* 프로젝트 전용 카드 그리드 레이아웃 */
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+            overflow: hidden; /* 이미지가 둥근 모서리를 벗어나지 않도록 */
+            transition: transform 0.2s;
+        }
+
+        /* 카드에 마우스를 올렸을 때 살짝 올라오는 효과 */
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* 프로젝트 이미지 공간 */
+        .project-image-box {
+            width: 100%;
+            height: 200px;
+            background: #e2e8f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #64748b;
+        }
+
+        .project-content {
+            padding: 25px;
+        }
+
+        .project-content h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #111827;
+        }
+
+        .project-content p {
+            color: #4b5563;
+            font-size: 15px;
+            margin-bottom: 15px;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #eff6ff;
+            color: #2563eb;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        footer{
+            background:#111827;
+            color:white;
+            text-align:center;
+            padding:25px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<body>
+
+<header>
+    <div class="logo"><a href="../index.html">Voyager Pilots</a></div>
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+        <a href="projects.html">Projects</a>
+    </nav>
+</header>
+
+<div class="page-header">
+    <h1>Contact</h1>
+    <p>VP와 함께 하는 곳</p>
+
+    <!-- <div class="filter-container">
+        <button class="filter-btn active" data-target="all">All</button>
+        <button class="filter-btn" data-target="mobile">Mobile Application</button>
+        <button class="filter-btn" data-target="macro">Macro Economics</button>
+        <button class="filter-btn" data-target="ai">AI</button>
+        <button class="filter-btn" data-target="data">Data Analysis</button>
+    </div> -->
+</div>
+
+<section>
+    <div class="project-grid">
+
+        <div class="project-card" data-category="mobile">
+            <div class="project-image-box"><span>[ Mobile App Image ]</span></div>
+            <div class="project-content">
+                <span class="tag">Mobile Application</span>
+                <br><br>
+                <h3>Mobile Application</h3>
+                <p>현대적인 트렌드와 뛰어난 몰입감을 선사하는 자체 개발 모바일 애플리케이션입니다.</p>
+            </div>
+        </div>
+
+        <div class="project-card" data-category="macro">
+            <div class="project-image-box"><span>[ Macro Economics Image ]</span></div>
+            <div class="project-content">
+                <span class="tag">Macro Economics</span>
+                <br><br>
+                <h3>글로벌 거시경제 인덱스</h3>
+                <p>환율, 물가, 금리 등 주요 경제 지표를 한눈에 파악하는 경제 분석 솔루션입니다.</p>
+            </div>
+        </div>
+
+        <div class="project-card" data-category="ai">
+            <div class="project-image-box"><span>[ AI Image ]</span></div>
+            <div class="project-content">
+                <span class="tag">AI</span>
+                <br><br>
+                <h3>AI 챗봇 솔루션</h3>
+                <p>인공지능 기반의 자동화 기술을 통해 비즈니스 커뮤니케이션을 효율화합니다.</p>
+            </div>
+        </div>
+
+        <div class="project-card" data-category="data">
+            <div class="project-image-box"><span>[ Data Analysis Image ]</span></div>
+            <div class="project-content">
+                <span class="tag">Data Analysis</span>
+                <br><br>
+                <h3>데이터 분석</h3>
+                <p>다양한 도메인의 데이터를 분석하고 <br>
+                    가치있는 인사이트를 발굴합니다.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    © 2026 VoyagerPilots. All Rights Reserved.
+</footer>
+
+<script>
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const projectCards = document.querySelectorAll('.project-card');
+
+    filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            // 활성화된 버튼 디자인 변경
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
+
+            const targetCategory = button.getAttribute('data-target');
+
+            // 카테고리에 맞는 카드만 보여주고 나머지는 숨기기
+            projectCards.forEach(card => {
+                const cardCategory = card.getAttribute('data-category');
+                
+                if (targetCategory === 'all' || targetCategory === cardCategory) {
+                    card.classList.remove('hide');
+                } else {
+                    card.classList.add('hide');
+                }
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
